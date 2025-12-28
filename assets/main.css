@@ -34,27 +34,34 @@ h2 {
 }
 
 /* Navigation */
+/* Header: move navigation to the right on desktop, center on mobile */
 .site-header {
-  margin-top: 1.2em;
-  margin-bottom: 2em;
-  text-align: center;
+  margin-top: 0.6em;
+  margin-bottom: 1.8em;
+  display: flex;
+  justify-content: flex-end;  /* push nav to the right inside the wrapper */
+  align-items: center;
 }
 
-.site-nav a {
-  color: #1a4db3;
-  text-decoration: none;
-  font-weight: 500;
+/* Ensure the nav line stays compact */
+.site-nav {
+  white-space: nowrap;
 }
 
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile breathing room */
+/* Mobile: center navigation and allow wrapping */
 @media (max-width: 768px) {
-  .wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .site-header {
+    justify-content: center;
+  }
+
+  .site-nav {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    margin: 0 .35em;
   }
 }
 
@@ -76,9 +83,13 @@ td {
 }
 
 .home-photo img {
-  width: 230px;          /* larger, better visual balance */
+  width: 280px;           /* enlarge on desktop */
   height: auto;
   border-radius: 4px;
+  display: block;
+  transform: translateY(30px); /* nudge down to align middle of bio */
+  -webkit-transform: translateY(30px);
+  transition: transform 160ms ease;
 }
 
 /* Mobile: stack photo above text */
@@ -88,10 +99,15 @@ td {
     align-items: center;
   }
 
+/* Keep mobile behavior unchanged: stack and smaller size, no nudge */
+@media (max-width: 768px) {
   .home-photo img {
-    width: 160px;
+    width: 160px;        /* mobile size */
     margin-bottom: 1em;
+    transform: none;
+    -webkit-transform: none;
   }
+}
 
   .home-text {
     text-align: left;
