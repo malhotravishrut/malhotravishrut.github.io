@@ -1,0 +1,9 @@
+/* Justify main text for academic look */
+.page-content p {
+  text-align: justify;
+}
+
+/* Improve readability */
+.page-content {
+  max-width: 780px;
+}
