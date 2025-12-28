@@ -2,7 +2,6 @@
 layout: default
 title: Teaching
 ---
-# Teaching
 
 **Teaching Fellow, Ashoka University**
 
