@@ -112,7 +112,7 @@ td {
   .home-text {
     text-align: left;
   }
-
+}
 /* ===== Teaching & content page typography ===== */
 
 .page-content h1 {
@@ -145,7 +145,34 @@ td {
   margin-top: 0.4em;
 }
 
-  
+/* ===== Sticky footer (site-wide) ===== */
+
+html, body {
+  height: 100%;
 }
+
+body {
+  margin: 0;
+}
+
+.site-container {
+  min-height: 100vh;       /* fill viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;                 /* push footer down when content is short */
+}
+
+.site-footer {
+  margin-top: 2.5em;
+  padding: 1em 0;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.85em;
+  color: #666;
+  text-align: center;
+}
+
 
 
