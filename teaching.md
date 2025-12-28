@@ -3,7 +3,7 @@ layout: default
 title: Teaching
 ---
 
-**Teaching Fellow, Ashoka University**
+## Teaching Fellow, Ashoka University
 
 ### Graduate-level Courses
 
