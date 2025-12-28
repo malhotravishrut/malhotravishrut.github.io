@@ -49,3 +49,12 @@ h2 {
 .site-nav a:hover {
   text-decoration: underline;
 }
+
+/* Mobile breathing room */
+@media (max-width: 768px) {
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
