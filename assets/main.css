@@ -67,4 +67,35 @@ td {
   padding: 0.3em 0;
 }
 
+/* ===== Homepage layout ===== */
+
+.home-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.home-photo img {
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Mobile: stack photo above text */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-photo img {
+    width: 160px;
+    margin-bottom: 1em;
+  }
+
+  .home-text {
+    text-align: left;
+  }
+}
+
 
