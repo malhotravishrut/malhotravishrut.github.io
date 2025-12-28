@@ -29,7 +29,8 @@ This paper examines the role of revenue concentration as a predictor of product 
 
 ## Other Work
 
-**IGC India Evidence Paper: Firms, trade, and productivity**(https://www.theigc.org/publications/igc-india-evidence-paper-firms-trade-and-productivity) (with Shruti Bhimsaria and Tim Dobermann)
+**[IGC India Evidence Paper: Firms, Trade, and Productivity](https://www.theigc.org/publications/igc-india-evidence-paper-firms-trade-and-productivity)**  
+(with Shruti Bhimsaria and Tim Dobermann)
 
 This synthesis paper identifies strategic areas in India where academic research can most effectively guide policies and business practices that balance productivity, job creation, and environmental sustainability.
 
