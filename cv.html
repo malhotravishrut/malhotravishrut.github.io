@@ -27,12 +27,17 @@ If you require a downloadable copy, please contact me.
     height: 80vh;
     max-height: 1100px;
     margin-top: 1em;
+
+    /* Critical for iOS */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .cv-container iframe {
     width: 100%;
     height: 100%;
     border: none;
+    display: block;
   }
 
   .cv-note {
