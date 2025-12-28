@@ -33,7 +33,7 @@ title: Home
 
     <p>
       <strong>Email:</strong>
-      <a href="mailto:vishrut.malhotra@outlook.com">vishrut.malhotra@outlook.com</a>
+      <a href="mailto:vishrut.malhotra_phd20@ashoka.edu.in">vishrut.malhotra_phd20@ashoka.edu.in</a>
     </p>
 
   </div>
