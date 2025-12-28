@@ -27,7 +27,7 @@ This paper examines the role of revenue concentration as a predictor of product 
 
 ---
 
-## Other Work
+## Policy & Outreach
 
 **[IGC India Evidence Paper: Firms, Trade, and Productivity](https://www.theigc.org/publications/igc-india-evidence-paper-firms-trade-and-productivity)**  
 (with Shruti Bhimsaria and Tim Dobermann)
