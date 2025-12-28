@@ -71,12 +71,12 @@ td {
 
 .home-container {
   display: flex;
-  align-items: flex-start;
-  gap: 2em;
+  align-items: center;   /* vertically center photo relative to text */
+  gap: 2.5em;
 }
 
 .home-photo img {
-  width: 180px;
+  width: 230px;          /* larger, better visual balance */
   height: auto;
   border-radius: 4px;
 }
