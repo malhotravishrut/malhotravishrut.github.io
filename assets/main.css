@@ -112,6 +112,40 @@ td {
   .home-text {
     text-align: left;
   }
+
+/* ===== Teaching & content page typography ===== */
+
+.page-content h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.8em;
+}
+
+.page-content h2 {
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+.page-content h3 {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+/* Body text */
+.page-content p,
+.page-content li {
+  font-size: 0.98em;
+  line-height: 1.6;
+}
+
+/* Teaching lists spacing */
+.page-content p + p {
+  margin-top: 0.4em;
+}
+
+  
 }
 
 
