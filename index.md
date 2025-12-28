@@ -36,12 +36,6 @@ title: Home
       <a href="mailto:vishrut.malhotra@outlook.com">vishrut.malhotra@outlook.com</a>
     </p>
 
-    <p>
-      <a href="cv.html">Curriculum Vitae</a> ·
-      <a href="research.html">Research</a> ·
-      <a href="teaching.html">Teaching</a>
-    </p>
-
   </div>
 
 </div>
