@@ -1,0 +1,63 @@
+---
+layout: default
+title: CV
+---
+
+<h1>Curriculum Vitae</h1>
+
+<p style="font-size: 0.95em; color: #555;">
+View-only version. Pinch-to-zoom is enabled on mobile devices.
+</p>
+
+<div class="cv-container">
+  <iframe
+    src="/assets/cv.pdf#toolbar=0&navpanes=0&scrollbar=1"
+    title="Curriculum Vitae"
+    loading="lazy"
+  ></iframe>
+</div>
+
+<p class="cv-note">
+If you require a downloadable copy, please contact me.
+</p>
+
+<style>
+  .cv-container {
+    width: 100%;
+    height: 80vh;
+    max-height: 1100px;
+    margin-top: 1em;
+  }
+
+  .cv-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .cv-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 1em;
+  }
+
+  @media (max-width: 768px) {
+    .cv-container {
+      height: 85vh;
+    }
+  }
+</style>
+
+<script>
+  // Desktop-only deterrents (do not interfere with mobile gestures)
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) &&
+        (e.key === 's' || e.key === 'p')) {
+      e.preventDefault();
+    }
+  });
+</script>
