@@ -2,7 +2,6 @@
 layout: default
 title: Research
 ---
-# Research
 
 ## **Working Papers**
 
