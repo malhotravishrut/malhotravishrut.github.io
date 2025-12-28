@@ -174,5 +174,38 @@ body {
   text-align: center;
 }
 
+/* ===== CV page: opt out of site layout constraints ===== */
+
+.cv-page .site-container {
+  min-height: auto;
+  display: block;
+}
+
+.cv-page .page-content {
+  flex: none;
+}
+
+.cv-page .wrapper {
+  max-width: none;          /* remove width constraint */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Ensure CV embed uses full readable width */
+.cv-page iframe,
+.cv-page embed,
+.cv-page object {
+  width: 100%;
+  max-width: 900px;
+  height: 90vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.cv-page h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 
 
