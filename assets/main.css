@@ -87,8 +87,8 @@ td {
   height: auto;
   border-radius: 4px;
   display: block;
-  transform: translateY(30px); /* nudge down to align middle of bio */
-  -webkit-transform: translateY(30px);
+  transform: translateY(40px); /* nudge down to align middle of bio */
+  -webkit-transform: translateY(40px);
   transition: transform 160ms ease;
 }
 
