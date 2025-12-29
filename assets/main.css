@@ -127,7 +127,7 @@ p {
 
 /* IMAGE UPDATE: LARGER */
 .home-photo img {
-  width: 350px;        /* Increased size to match text height */
+  width: 360px;        /* Increased size to match text height */
   height: auto;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
