@@ -1,211 +1,214 @@
-/* ===== Clean academic layout ===== */
-
-.wrapper {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+/* =========================================
+   1. VARIABLES & RESET
+   ========================================= */
+:root {
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-primary: #003366;    /* World Bank/IMF Navy */
+  --color-text: #2c3e50;       /* Dark Slate - easier to read than pure black */
+  --color-text-light: #5f6c7b; /* Lighter grey for metadata */
+  --color-link: #0056b3;       /* Professional Blue */
+  --color-link-hover: #003366;
+  --color-bg: #ffffff;
+  --color-border: #eaeaea;
+  --max-width: 860px;          /* Slightly wider for modern screens */
 }
 
-/* Body text: lighter, cleaner */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 15.5px;
-  line-height: 1.6;
-  color: #111;
-}
-
-/* Paragraphs */
-.page-content p {
-  text-align: justify;   /* remove this line if you prefer left-aligned */
-  margin-bottom: 1em;
-}
-
-/* Headings */
-h1 {
-  font-size: 1.9em;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 1.3em;
-  margin-top: 1.5em;
-  font-weight: 600;
-}
-
-/* Navigation */
-/* Header: move navigation to the right on desktop, center on mobile */
-.site-header {
-  margin-top: 0.6em;
-  margin-bottom: 1.8em;
-  display: flex;
-  justify-content: flex-end;  /* push nav to the right inside the wrapper */
-  align-items: center;
-}
-
-/* Ensure the nav line stays compact */
-.site-nav {
-  white-space: nowrap;
-}
-
-/* Mobile: center navigation and allow wrapping */
-@media (max-width: 768px) {
-  .site-header {
-    justify-content: center;
-  }
-
-  .site-nav {
-    white-space: normal;
-    text-align: center;
-  }
-
-  .site-nav a {
-    display: inline-block;
-    margin: 0 .35em;
-  }
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td {
-  padding: 0.3em 0;
-}
-
-/* ===== Homepage layout ===== */
-
-.home-container {
-  display: flex;
-  align-items: center;   /* vertically center photo relative to text */
-  gap: 2.5em;
-}
-
-.home-photo img {
-  width: 280px;           /* enlarge on desktop */
-  height: auto;
-  border-radius: 4px;
-  display: block;
-  transform: translateY(40px); /* nudge down to align middle of bio */
-  -webkit-transform: translateY(40px);
-  transition: transform 160ms ease;
-}
-
-/* Mobile: stack photo above text */
-@media (max-width: 768px) {
-  .home-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-/* Keep mobile behavior unchanged: stack and smaller size, no nudge */
-@media (max-width: 768px) {
-  .home-photo img {
-    width: 160px;        /* mobile size */
-    margin-bottom: 1em;
-    transform: none;
-    -webkit-transform: none;
-  }
-}
-
-  .home-text {
-    text-align: left;
-  }
-}
-/* ===== Teaching & content page typography ===== */
-
-.page-content h1 {
-  font-size: 1.8em;
-  margin-bottom: 0.8em;
-}
-
-.page-content h2 {
-  font-size: 1.25em;
-  margin-top: 1.6em;
-  margin-bottom: 0.6em;
-}
-
-.page-content h3 {
-  font-size: 1.05em;
-  font-weight: 600;
-  margin-top: 1.2em;
-  margin-bottom: 0.4em;
-}
-
-/* Body text */
-.page-content p,
-.page-content li {
-  font-size: 0.98em;
-  line-height: 1.6;
-}
-
-/* Teaching lists spacing */
-.page-content p + p {
-  margin-top: 0.4em;
-}
-
-/* ===== Sticky footer (site-wide) ===== */
-
-html, body {
-  height: 100%;
-}
+* { box-sizing: border-box; }
 
 body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-text);
+  background-color: var(--color-bg);
   margin: 0;
+  -webkit-font-smoothing: antialiased; /* Makes fonts look sharper on Mac */
 }
 
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* =========================================
+   2. LAYOUT UTILITIES
+   ========================================= */
 .site-container {
-  min-height: 100vh;       /* fill viewport */
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .page-content {
-  flex: 1;                 /* push footer down when content is short */
+  flex: 1;
+  padding-bottom: 3rem;
 }
 
-.site-footer {
-  margin-top: 2.5em;
-  padding: 1em 0;
-  border-top: 1px solid #e5e5e5;
-  font-size: 0.85em;
-  color: #666;
-  text-align: center;
+/* =========================================
+   3. TYPOGRAPHY
+   ========================================= */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #111;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  line-height: 1.3;
 }
 
-/* ===== CV page: opt out of site layout constraints ===== */
+h1 { font-size: 2rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.3em; }
+h3 { font-size: 1.25rem; margin-top: 1.5em; }
 
-.cv-page .site-container {
-  min-height: auto;
-  display: block;
+p { margin-bottom: 1.2em; }
+
+/* Page Titles (Research, Teaching, etc.) */
+.page-title {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 2.2rem;
+  color: var(--color-primary);
 }
 
-.cv-page .page-content {
-  flex: none;
+/* =========================================
+   4. NAVIGATION (HEADER)
+   ========================================= */
+.site-header {
+  padding: 1.2em 0;
+  margin-bottom: 3em;
+  border-bottom: 1px solid var(--color-border);
+  background-color: #fff;
 }
 
-.cv-page .wrapper {
-  max-width: none;          /* remove width constraint */
-  margin-left: 0;
-  margin-right: 0;
+/* Flex container for the nav */
+.site-header .site-nav {
+  display: flex;
+  justify-content: flex-end; /* Right align links */
+  gap: 1.5em;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
-/* Ensure CV embed uses full readable width */
-.cv-page iframe,
-.cv-page embed,
-.cv-page object {
+.site-header a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  color: var(--color-primary);
+  text-decoration: none; /* No underline on nav, just color change */
+}
+
+/* =========================================
+   5. HOME PAGE (Bio Section)
+   ========================================= */
+.home-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5em;
+  margin-top: 1em;
+}
+
+.home-photo img {
+  width: 260px;
+  height: auto;
+  border-radius: 6px; /* Soft rounding */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Subtle professional shadow */
+  object-fit: cover;
+}
+
+.home-text h1 {
+  margin-top: 0; /* Remove top margin for the name */
+  color: var(--color-primary);
+  font-size: 2.4rem;
+}
+
+.home-text p {
+  font-size: 1.05rem; /* Slightly larger for bio */
+}
+
+/* Email styling */
+.home-text a[href^="mailto"] {
+  font-weight: 500;
+}
+
+/* =========================================
+   6. TABLES (For Teaching/Data)
+   ========================================= */
+table {
   width: 100%;
-  max-width: 900px;
-  height: 90vh;
-  display: block;
-  margin: 0 auto;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
 }
 
-.cv-page h1 {
+td, th {
+  padding: 0.75em 0.5em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+.site-footer {
+  padding: 2em 0;
+  border-top: 1px solid var(--color-border);
   text-align: center;
-  margin-bottom: 1em;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
 }
 
+/* =========================================
+   8. MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 768px) {
+  /* Stack Home Page */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Keep text left aligned for readability */
+    gap: 2em;
+  }
 
+  .home-photo img {
+    width: 180px;
+  }
 
+  /* Adjust Nav */
+  .site-header {
+    padding: 1em 0;
+  }
+  
+  .site-header .site-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9rem;
+  }
+  
+  h1 { font-size: 1.75rem; }
+  .wrapper { padding: 0 1.25em; }
+}
+
+/* =========================================
+   9. CV PAGE OVERRIDES
+   ========================================= */
+.cv-page .wrapper { max-width: 100%; padding: 0; }
+.cv-page .site-header { margin-bottom: 0; }
