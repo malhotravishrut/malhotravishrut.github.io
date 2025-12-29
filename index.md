@@ -30,12 +30,14 @@ title: Home
       firm growth. I am particularly interested in the role of policy in helping firms in the Global South
       transition from cost-competitive producers to global innovation leaders.
     </p>
-
+        
     <p>
       <strong>Email:</strong>
-      <a href="mailto:vishrut.malhotra_phd20@ashoka.edu.in">vishrut.malhotra_phd20@ashoka.edu.in</a>
-    </p>
+      <a href="mailto:vishrut.malhotra_phd20@ashoka.edu.in,vishrut.malhotra@outlook.com">
+        vishrut.malhotra_phd20@ashoka.edu.in
+      </a>
+    </p> 
 
-  </div>
+</div>
 
 </div>
