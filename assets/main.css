@@ -4,13 +4,13 @@
 :root {
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --color-primary: #003366;    /* World Bank/IMF Navy */
-  --color-text: #2c3e50;       /* Dark Slate - easier to read than pure black */
+  --color-text: #2c3e50;       /* Dark Slate */
   --color-text-light: #5f6c7b; /* Lighter grey for metadata */
   --color-link: #0056b3;       /* Professional Blue */
   --color-link-hover: #003366;
   --color-bg: #ffffff;
   --color-border: #eaeaea;
-  --max-width: 860px;          /* Slightly wider for modern screens */
+  --max-width: 900px;          /* Slightly wider to accommodate larger image */
 }
 
 * { box-sizing: border-box; }
@@ -22,7 +22,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   margin: 0;
-  -webkit-font-smoothing: antialiased; /* Makes fonts look sharper on Mac */
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -49,7 +49,7 @@ a:hover {
 .wrapper {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 25px;
   width: 100%;
 }
 
@@ -73,9 +73,13 @@ h1 { font-size: 2rem; letter-spacing: -0.02em; }
 h2 { font-size: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.3em; }
 h3 { font-size: 1.25rem; margin-top: 1.5em; }
 
-p { margin-bottom: 1.2em; }
+/* JUSTIFIED TEXT UPDATE */
+p {
+  margin-bottom: 1.2em;
+  text-align: justify; /* Makes text block rectangular */
+}
 
-/* Page Titles (Research, Teaching, etc.) */
+/* Page Titles */
 .page-title {
   margin-top: 0;
   margin-bottom: 1.5em;
@@ -87,29 +91,28 @@ p { margin-bottom: 1.2em; }
    4. NAVIGATION (HEADER)
    ========================================= */
 .site-header {
-  padding: 1.2em 0;
+  padding: 1.5em 0;
   margin-bottom: 3em;
   border-bottom: 1px solid var(--color-border);
   background-color: #fff;
 }
 
-/* Flex container for the nav */
+/* NAVIGATION UPDATE: CENTERED */
 .site-header .site-nav {
   display: flex;
-  justify-content: flex-end; /* Right align links */
-  gap: 1.5em;
-  font-size: 0.95rem;
+  justify-content: center; /* Centered looks cleaner */
+  gap: 2em;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .site-header a {
   color: var(--color-text);
-  text-decoration: none;
 }
 
 .site-header a:hover {
   color: var(--color-primary);
-  text-decoration: none; /* No underline on nav, just color change */
+  text-decoration: none;
 }
 
 /* =========================================
@@ -117,36 +120,37 @@ p { margin-bottom: 1.2em; }
    ========================================= */
 .home-container {
   display: flex;
-  align-items: flex-start;
-  gap: 3.5em;
+  align-items: center; /* Vertically Centers the image */
+  gap: 4em;            /* More space between image and text */
   margin-top: 1em;
 }
 
+/* IMAGE UPDATE: LARGER */
 .home-photo img {
-  width: 260px;
+  width: 350px;        /* Increased size to match text height */
   height: auto;
-  border-radius: 6px; /* Soft rounding */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Subtle professional shadow */
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   object-fit: cover;
+  display: block;      /* Fixes random whitespace */
 }
 
 .home-text h1 {
-  margin-top: 0; /* Remove top margin for the name */
+  margin-top: 0;
   color: var(--color-primary);
   font-size: 2.4rem;
 }
 
 .home-text p {
-  font-size: 1.05rem; /* Slightly larger for bio */
+  font-size: 1.05rem;
 }
 
-/* Email styling */
 .home-text a[href^="mailto"] {
   font-weight: 500;
 }
 
 /* =========================================
-   6. TABLES (For Teaching/Data)
+   6. TABLES
    ========================================= */
 table {
   width: 100%;
@@ -178,33 +182,24 @@ tr:last-child td {
 /* =========================================
    8. MOBILE RESPONSIVENESS
    ========================================= */
-@media (max-width: 768px) {
-  /* Stack Home Page */
+@media (max-width: 850px) {
+  /* Stack Home Page on tablets/phones */
   .home-container {
     flex-direction: column;
     align-items: center;
-    text-align: left; /* Keep text left aligned for readability */
+    text-align: left;
     gap: 2em;
   }
 
   .home-photo img {
-    width: 180px;
+    width: 220px; /* Smaller on mobile */
   }
 
-  /* Adjust Nav */
-  .site-header {
-    padding: 1em 0;
-  }
-  
   .site-header .site-nav {
-    justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.9rem;
   }
-  
-  h1 { font-size: 1.75rem; }
-  .wrapper { padding: 0 1.25em; }
 }
 
 /* =========================================
