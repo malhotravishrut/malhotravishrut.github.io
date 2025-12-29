@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<h1>Vishrut Malhotra</h1>
+
 <div class="home-container">
 
   <div class="home-photo">
@@ -10,13 +12,11 @@ title: Home
   </div>
 
   <div class="home-text">
-
-    <h1>Vishrut Malhotra</h1>
-
-    <p><strong>PhD Candidate in Economics</strong></p>
+    
+    <p><strong>PhD candidate in Economics</strong></p>
 
     <p>
-      Research interests: International Trade, Firm Dynamics and Upgrading, Structural Transformation
+      Research interests: International Trade, Firm Dynamics and Upgrading, Structural Transformation and Innovation
     </p>
 
     <p>
