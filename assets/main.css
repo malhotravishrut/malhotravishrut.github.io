@@ -122,36 +122,52 @@ p {
 .site-header a:hover { color: var(--color-primary); text-decoration: none; }
 
 /* =========================================
-   5. HOME PAGE (Structure)
+   5. HOME PAGE (Bio Section)
    ========================================= */
-/* We will move the Name H1 outside of this container in HTML 
-   so it sits centered on top of the split layout */
 
 .home-container {
   display: flex;
-  align-items: flex-start; /* Align top so text starts parallel to image top */
-  gap: 3.5em;
+  align-items: center; /* This forces Vertical Centering */
+  gap: 4em;            /* Generous space between photo and text */
   margin-top: 2em;
+  max-width: 1100px;   /* Allow this specific container to be a bit wider */
+  margin-left: auto;   /* These two center the whole block on the page */
+  margin-right: auto;
 }
 
 .home-photo img {
-  width: 320px;
-  height: auto;
+  width: 380px;        /* Increased size (was 320px) */
+  height: auto;        /* Maintains aspect ratio */
   border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   object-fit: cover;
   display: block;
+  flex-shrink: 0;      /* Prevents image from squishing if screen gets small */
 }
 
 .home-text {
-  /* No special styles needed, just holds the P tags */
+  flex: 1;             /* Allows text to take up remaining space */
 }
 
 .home-text p {
   font-size: 1.05rem;
+  text-align: justify;
 }
 
 .home-text a[href^="mailto"] { font-weight: 500; }
+
+/* Mobile Stack */
+@media (max-width: 850px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .home-photo img { 
+    width: 260px; /* Smaller on mobile */
+  }
+}
 
 /* =========================================
    6. TABLES
