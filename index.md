@@ -13,7 +13,7 @@ title: Home
 
     <h1>Vishrut Malhotra</h1>
 
-    <p><strong>PhD Student in Economics</strong></p>
+    <p><strong>PhD Candidate in Economics</strong></p>
 
     <p>
       Research interests: International Trade, Firm Dynamics and Upgrading, Structural Transformation
