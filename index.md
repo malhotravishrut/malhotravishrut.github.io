@@ -16,7 +16,7 @@ title: Home
     <p><strong>PhD candidate in Economics</strong></p>
 
     <p>
-      Research interests: Firm Dynamics and Upgrading, Industrial Organisation, International Trade, and Innovation
+      Research interests: Firm Dynamics and Upgrading, International Trade, Industrial Organisation, and Innovation
     </p>
 
     <p>
