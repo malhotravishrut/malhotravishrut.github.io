@@ -8,7 +8,7 @@ title: Research
 **Product Quality Upgrading in response to Chinese Competition** (Job Market Paper)
 
 _Abstract_  
-This paper examines how greater competition from China affected the quality upgrading of Indian manufacturers in both export and domestic markets. I combine detailed product-level trade data, plant-level production data from India, and infer product quality using both price and quantity information. To identify causal effects of competition on quality upgrading, I use an instrumental variable strategy. The results indicate that a 10 percent increase in Chinese competition in an export destination market raises the quality of Indian exports to that market by 1.2 percent. This upgrading is heterogeneous, driven entirely by varieties sold in relatively richer destinations. In the domestic market, a 10 percent rise in Chinese competition increases the quality of domestically sold Indian varieties by around 1 percent, but only among large plants. Large plants upgrade by investing in fixed assets, and increasing the share of intermediate input costs, suggesting capital deepening and input upgrading as key mechanisms. Overall, the findings indicate that trade-induced competition can act as a catalyst for technological upgrading and quality improvement in developing economies, particularly among larger firms.
+This paper examines how intensified product market competition from China affects product quality upgrading in Indian manufacturing. Using plant-product level data from India, I infer product quality from price and quantity information following the approach of  Khandelwal et al. (2013). For identification, I instrument the growth of Chinese imports into India with the growth in Chinese exports to the rest of the world at the product-year level, isolating supply-driven variation in Chinese competition. A 10 percent increase in Chinese competition raises product quality by about 1 percent among large Indian plants, with no significant response among smaller plants. The upgrading is robust to controlling for the input-availability channel, an established determinant of quality improvement. Large Indian plants upgrade product quality by increasing investment in fixed capital and incurring a higher share of their production costs on intermediate inputs, as key mechanisms. I further document parallel evidence of quality upgrading in Indian exports at the product-export-market level using trade data. Export-market quality upgrading is concentrated in products sold to relatively high-income markets. Taken together, the findings indicate that trade-induced competition can act as a catalyst for capital deepening and quality improvement in developing economies, particularly among less-constrained, larger firms.
 
 [Draft coming soon]
 
@@ -23,7 +23,7 @@ This paper examines the role of revenue concentration as a predictor of product 
 
 ## Work in Progress
 
-**Trade shock and Product Complexity**
+**Decomposed Trade shock and Product Quality**
 
 ---
 
